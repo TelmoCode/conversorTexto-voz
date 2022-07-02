@@ -1,6 +1,8 @@
 from gtts import gTTS
+#pip install gtts
 
 from playsound import playsound
+#pip install playsound
 
 audio = 'speech.mp3'
 
