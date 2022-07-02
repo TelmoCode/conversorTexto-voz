@@ -1,3 +1,5 @@
+from tkinter import *
+
 from gtts import gTTS
 #pip install gtts
 
@@ -8,9 +10,12 @@ audio = 'speech.mp3'
 
 language = 'pt-br'
 
-sp = gTTS(text='Mas grande é o Senhor na nossa vida',
+txt = 'Mas graças a Deus que nos dá vitória por Cristo Jesus nosso Senhor'
+
+sp = gTTS(text=f"{txt}",
 lang=language, 
 slow=False)
 
 sp.save(audio)
 playsound(audio)
+
